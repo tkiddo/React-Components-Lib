@@ -1,0 +1,11 @@
+{
+  "name": "react-components-lib",
+  "version": "1.0.0",
+  "description": "react components lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
