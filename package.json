@@ -1,14 +1,16 @@
 {
   "name": "sliver-react-components-lib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react components lib",
+  "repository": "git@github.com:justforfunmy/React-Components-Lib.git",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "transpile": "babel src -d dist ",
-    "compile": "npx babel src --out-dir lib"
+    "compile": "npx babel src --out-dir lib",
+    "gh-pages":"gh-pages -d dist"
   },
   "author": "sliver",
   "license": "ISC",
@@ -29,6 +31,7 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.2",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.2.0",
     "less-loader": "^5.0.0",
     "style-loader": "^1.1.4",

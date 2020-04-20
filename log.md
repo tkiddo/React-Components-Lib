@@ -157,7 +157,45 @@ npm login
 npm publish
 ````
 
+
 注意：每次更新发布的时候，必须把版本号更新。
+
+发布遇到403错误，是由于使用了淘宝源，切换到npmjs源就好
+
+````
+npm config set registry http://registry.npmjs.org/
+````
+
+4. Demo页
+
+发布在线 demo 可以直接用 Github Pages 来帮助我们托管，通过 webpack 构建生产环境版本，然后发到 Github 上去即可
+
+````
+yarn add gh-pages --dev
+````
+
+添加npm-scripts：
+
+````
+//packag.json
+{
+  "scripts":{
+    "gh-pages":"gh-pages -d dist"
+  }
+}
+
+````
+
+打包代码,并发布在线demo
+
+````
+yarn build
+yarn gh-pages
+````
+
+在线demo：`https://justforfunmy.github.io/React-Components-Lib/`
+
+justforfunmy 是我的GitHub用户名，React-Components-Lib是仓库名
 
 
 #### 开发过程中的问题
@@ -173,6 +211,7 @@ npm publish
    use: ["style-loader", "css-loader?modules"]
 }
 ````
+
 
 
 
