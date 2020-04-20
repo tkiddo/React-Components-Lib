@@ -1,7 +1,23 @@
 import React from 'react';
-import styles from './button.module.css'
+import './button.css'
+import ClassNames from 'classnames'
 
-export const Button =(props)=>(
-    <button className={`${styles['btn']} ${styles['btn-primary']}`}>{props.children}</button>
-)
+export const Button =(props)=>{
+    const {
+        type,
+        className,
+        size,
+        icon,
+        onClick
+    } = props;
+    const prefix = 'btn';
+    const btnCls = ClassNames(prefix,className,{
+        [`${prefix}-${type}`]:type,
+        [`${prefix}-${size}`]:size
+    })
+    console.log(btnCls)
+    return (
+        <button className={btnCls}>{props.children}</button>
+    )
+}
 

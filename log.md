@@ -160,6 +160,21 @@ npm publish
 注意：每次更新发布的时候，必须把版本号更新。
 
 
+#### 开发过程中的问题
+
++ css Module 配置问题
+
+[CSS Modules 用法教程](http://www.ruanyifeng.com/blog/2016/06/css_modules.html)
+
+````js
+//webpack.config.js
+{
+   test: /\.css$/,
+   use: ["style-loader", "css-loader?modules"]
+}
+````
+
+
 
 
 [参考](https://blog.csdn.net/sinat_17775997/article/details/86690152)
