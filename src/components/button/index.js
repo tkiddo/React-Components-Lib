@@ -7,7 +7,6 @@ export const Button =(props)=>{
         type,
         className,
         size,
-        icon,
         onClick
     } = props;
     const prefix = 'btn';
@@ -17,7 +16,7 @@ export const Button =(props)=>{
     })
     console.log(btnCls)
     return (
-        <button className={btnCls}>{props.children}</button>
+        <button type='button' className={btnCls} onClick={onClick}>{props.children}</button>
     )
 }
 

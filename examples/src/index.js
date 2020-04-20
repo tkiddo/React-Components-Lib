@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { render} from 'react-dom';
-import {Button} from '../../src';
+import ButtonDemo from './view/buttonDemo'
+import './index.css'
 const App = () => (
     <Fragment>
-        <Button type='primary'>primary</Button>
-        <Button type='danger'>danger</Button>
+        <ButtonDemo />
     </Fragment>
 
 );

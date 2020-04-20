@@ -7,5 +7,5 @@ npm install sliver-react-components-lib
 ````
 
 ````js
-import {MyComponent} from 'sliver-react-components-lib'
+import {Button} from 'sliver-react-components-lib'
 ````
