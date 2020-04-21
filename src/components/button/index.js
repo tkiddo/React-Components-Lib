@@ -1,6 +1,6 @@
 import React from 'react';
-import './button.css'
 import ClassNames from 'classnames'
+import './style.css'
 
 export const Button =(props)=>{
     const {

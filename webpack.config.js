@@ -7,7 +7,15 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
   filename: "./index.html"
 });
 module.exports = {
-  entry: path.join(__dirname, "examples/src/index.js"),
+  entry: {
+    'bundle':path.join(__dirname, "examples/src/index.js"),
+    'index':path.join(__dirname, "src/index.js"),
+  },
+  
+  output:{
+    path:path.resolve(__dirname,'dist'),
+    filename:'[name].js'
+  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,

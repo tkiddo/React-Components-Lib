@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import {Button} from '../../../src/components/button';
+import {Button} from '../../../lib/index.js'
 
 const ButtonDemo=()=>(
     <Fragment>

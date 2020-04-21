@@ -123,7 +123,8 @@ module.exports = {
 1. `"start": "webpack-dev-server --mode development"`
 ：开发过程中开启热更新
 2. `"build": "webpack --mode production"`:打包项目代码
-3. `"compile": "npx babel src --out-dir lib"`: 编译组件源码输出到`lib`文件夹,运行这个命令后，会生成lib文件夹，这是用户可以直接导入使用的。此时需要在`package.json`中更改`main`：
+3. `"compile": "npx babel src --out-dir lib --copy-files"`: 编译组件源码输出到`lib`文件夹(**注意`--copy-files`参数用来拷贝一些静态文件，因为babel-cli只处理js文件，css文件直接拷贝即可**),
+运行这个命令后，会生成lib文件夹，这是用户可以直接导入使用的。此时需要在`package.json`中更改`main`：
 ````json
 //package.json
 {
@@ -212,10 +213,26 @@ justforfunmy 是我的GitHub用户名，React-Components-Lib是仓库名
 }
 ````
 
-+ 多入口打包(未解决)
++ 多入口打包
+
+````js
+module.exports = {
+  entry: {
+    //配置多个入口
+    'bundle':path.join(__dirname, "examples/src/index.js"),
+    'index':path.join(__dirname, "src/index.js"),
+  },
+  //出口的filename中的name参数根据入口的key值确定
+  output:{
+    path:path.resolve(__dirname,'dist'),
+    filename:'[name].js'
+  }
+}
+````
+
+本项目中暂时还没用到。
 
 
 
 
-
-[参考](https://blog.csdn.net/sinat_17775997/article/details/86690152)
+[参考链接](https://blog.csdn.net/sinat_17775997/article/details/86690152)
