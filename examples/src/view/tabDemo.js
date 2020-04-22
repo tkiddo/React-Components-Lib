@@ -9,6 +9,7 @@ const TabDemo=(props)=>{
             <Tabs>
                 <TabPane>home</TabPane>
                 <TabPane>about</TabPane>
+                <TabPane>sign</TabPane>
             </Tabs>
         </Fragment>
         

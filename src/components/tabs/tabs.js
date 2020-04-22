@@ -4,8 +4,7 @@ import ClassNames from 'classnames';
 export const Tabs = (props) => {
     const {
         className,
-        direction,
-        onChange
+        direction
     } = props;
     const prefix = 'tabs';
     const tabsCls = ClassNames(prefix,className,{
@@ -16,16 +15,19 @@ export const Tabs = (props) => {
         if(child.type){
             return React.cloneElement(child,{
                 active:activeKey===index,
-                onClick:()=>setActiveKey(index)
+                onClick:()=>{
+                    setActiveKey(index)
+                }
             })
         }else{
             return child;
         }
     })
+    
     return (
         <div className={tabsCls}>
             {newChildren}
-            <div className='tabs-ink-bar'></div>
+            {/* <TabBar barWidth={barWidth} activeKey={activeKey}/> */}
         </div>
     )
 }
