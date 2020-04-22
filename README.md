@@ -3,11 +3,11 @@
 #### 使用
 
 ````npm
-npm install sliver-react-components-lib
+npm install swallow-lib
 ````
 
 ````js
-import {Button} from 'sliver-react-components-lib'
+import {Button} from 'swallow-lib'
 ````
 
 [demo](https://justforfunmy.github.io/React-Components-Lib/)
