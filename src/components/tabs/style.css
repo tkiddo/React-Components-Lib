@@ -1,0 +1,50 @@
+.tabs{
+    display: flex;
+    position: relative;
+}
+
+.tabs-column{
+    flex-direction: column;
+}
+
+.tabs-row{
+    flex-direction: row;
+}
+
+.tabs-ink-bar{
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 0;
+    height: 2px;
+    background-color: #1890ff;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.tabpane{
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 32px 0 0;
+    padding: 12px 0;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color .3s cubic-bezier(.645,.045,.355,1);
+    transition: color .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.tabpane:hover{
+    color: #1890ff;
+}
+
+.tabpane-active{
+    color: #1890ff;
+    font-weight: 500;
+    border-bottom: #1890ff 2px solid;
+}

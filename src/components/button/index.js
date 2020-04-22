@@ -14,7 +14,6 @@ export const Button =(props)=>{
         [`${prefix}-${type}`]:type,
         [`${prefix}-${size}`]:size
     })
-    console.log(btnCls)
     return (
         <button type='button' className={btnCls} onClick={onClick}>{props.children}</button>
     )
