@@ -1,0 +1,17 @@
+
+.highlight{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+}
+
+.pre{
+    display: block;
+    color: #212529;
+}
+
+code{
+    font-size: inherit;
+    color: #2f6f9f;
+    line-height: 200%;
+}

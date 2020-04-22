@@ -120,8 +120,8 @@ module.exports = {
 
 + npm-scripts
 
-1. `"start": "webpack-dev-server --mode development"`
-：开发过程中开启热更新
+1. `"start": "webpack-dev-server --mode development --open"`
+：自动开启浏览器，开启热更新
 2. `"build": "webpack --mode production"`:打包项目代码
 3. `"compile": "npx babel src --out-dir lib --copy-files"`: 编译组件源码输出到`lib`文件夹(**注意`--copy-files`参数用来拷贝一些静态文件，因为babel-cli只处理js文件，css文件直接拷贝即可**),
 运行这个命令后，会生成lib文件夹，这是用户可以直接导入使用的。此时需要在`package.json`中更改`main`：
@@ -230,7 +230,11 @@ module.exports = {
 }
 ````
 
-本项目中暂时还没用到。
+#### 开发日记
+
+##### 0422
+
++ 显示代码组件
 
 
 
