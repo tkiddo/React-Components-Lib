@@ -240,7 +240,7 @@ module.exports = {
 
 + 计算tabpane的宽度
 
-
++ 代码规范
 
 
 [参考链接](https://blog.csdn.net/sinat_17775997/article/details/86690152)
