@@ -236,6 +236,10 @@ module.exports = {
 
 + 显示代码组件
 
+`pre`,`code`
+
++ 计算tabpane的宽度
+
 
 
 
