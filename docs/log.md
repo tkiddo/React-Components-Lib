@@ -238,9 +238,17 @@ module.exports = {
 
 `pre`,`code`
 
-+ 计算tabpane的宽度
++ 计算tabpane的宽度(undone)
+
+##### 0423
 
 + 代码规范
+
+````
+yarn add eslint --dev
+npx eslint --init
+````
+[使用ESLint+Prettier来统一前端代码风格](https://segmentfault.com/a/1190000015315545)
 
 
 [参考链接](https://blog.csdn.net/sinat_17775997/article/details/86690152)
